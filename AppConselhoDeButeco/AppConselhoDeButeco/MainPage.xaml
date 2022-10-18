@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppConselhoDeButeco.MainPage">
+    
+    <StackLayout
+        BackgroundColor="Pink"
+        Padding="10"
+        Margin="10">
+
+        <Label HorizontalOptions="Center" 
+               FontSize="Title"
+               FontAttributes="Bold"
+               Text="cONCEWLHO DE BUTECO"/>
+        
+        <Button Text="AAAAA MENSAGEM MOTIVACIONAL AAAA" 
+                BackgroundColor="AliceBlue"
+                Clicked="bntMensagem_Clicked"/>
+
+        <StackLayout>
+
+            <Label Text="advice:"/>
+            <Label x:Name="AdviceLabel" Text="{AppThemeBinding Title}"/>
+
+            <Label Text="Id:"/>
+            <Label x:Name="IdLabel" Text="{Binding Id}"/>
+
+            <Label Text="Mensagem:"/>
+            <Label x:Name="ConselhoLabel" Text="{Binding Conselho}"/>
+
+        </StackLayout>
+    </StackLayout>
+        
+
+</ContentPage>
