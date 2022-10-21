@@ -15,11 +15,12 @@
         
         <Button Text="AAAAA MENSAGEM MOTIVACIONAL AAAA" 
                 BackgroundColor="AliceBlue"
+                x:Name="bntMensagem"
                 Clicked="bntMensagem_Clicked"/>
 
         <StackLayout>
 
-            <Label Text="advice:"/>
+            <Label Text="Slip:"/>
             <Label x:Name="AdviceLabel" Text="{AppThemeBinding Title}"/>
 
             <Label Text="Id:"/>
