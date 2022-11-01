@@ -13,6 +13,8 @@ namespace AppConselhoDeButeco
 {
     public partial class MainPage : ContentPage
     {
+        //não consegui fazer :c
+
         public MainPage()
         {
             InitializeComponent();
