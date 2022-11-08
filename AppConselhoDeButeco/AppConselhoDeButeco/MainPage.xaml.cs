@@ -18,6 +18,9 @@ namespace AppConselhoDeButeco
         public MainPage()
         {
             InitializeComponent();
+
+            var Image = new Image { Source = "fundo.jpg" };
+
             this.Title = "Concelho da mesa";
 
             this.BindingContext = new Mensagem();

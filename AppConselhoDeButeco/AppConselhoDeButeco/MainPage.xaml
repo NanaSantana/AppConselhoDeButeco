@@ -1,36 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppConselhoDeButeco.MainPage">
-    
-    <StackLayout
-        BackgroundColor="Pink"
-        Padding="10"
-        Margin="10">
+             x:Class="AppConselhoDeButeco.MainPage"
+             BackgroundImageSource="fundo.jpg"
+             BackgroundColor="#F08080">
 
-        <Label HorizontalOptions="Center" 
-               FontSize="Title"
-               FontAttributes="Bold"
-               Text="cONCEWLHO DE BUTECO"/>
+
+    <ContentPage.Content>
+
+
+        <StackLayout
+            BackgroundColor="#FFD5C0"
+            Padding="10"
+            Margin="20">
+
+            <Label HorizontalOptions="Center" 
+                   FontSize="Title" FontAttributes="Bold"
+                   Text="Conselho legal :D" TextColor="#CD5C5C"
+                   Padding="10"/>
         
-        <Button Text="AAAAA MENSAGEM MOTIVACIONAL AAAA" 
+            <Button Text="Mensagem bonita aqui :3" 
+                    BackgroundColor="AliceBlue"
+                    x:Name="bntMensagem"
+                    Clicked="bntMensagem_Clicked"/>
+
+            <Frame
                 BackgroundColor="AliceBlue"
-                x:Name="bntMensagem"
-                Clicked="bntMensagem_Clicked"/>
+                Padding="10"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand">
 
-        <StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding Id}" 
+                           FontSize="30"
+                           FontAttributes="Bold"
+                           />
 
-            <Label Text="Slip:"/>
-            <Label x:Name="AdviceLabel" Text="{AppThemeBinding Title}"/>
 
-            <Label Text="Id:"/>
-            <Label x:Name="IdLabel" Text="{Binding Id}"/>
-
-            <Label Text="Mensagem:"/>
-            <Label x:Name="ConselhoLabel" Text="{Binding Conselho}"/>
-
+                    <Label Text="{Binding Conselho}"
+                           HorizontalOptions="Center"
+                           FontAttributes="Italic"/>
+                </StackLayout>
+            </Frame>
         </StackLayout>
-    </StackLayout>
-        
+
+    </ContentPage.Content>
 
 </ContentPage>
