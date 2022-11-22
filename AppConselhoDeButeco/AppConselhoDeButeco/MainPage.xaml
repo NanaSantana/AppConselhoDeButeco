@@ -10,7 +10,7 @@
 
 
         <StackLayout
-            BackgroundColor="#FFD5C0"
+            BackgroundColor="#FFD5C0" 
             Padding="10"
             Margin="20">
 
@@ -21,14 +21,16 @@
         
             <Button Text="Mensagem bonita aqui :3" 
                     BackgroundColor="AliceBlue"
+                    CornerRadius="10"
+                    Margin="05"
                     x:Name="bntMensagem"
                     Clicked="bntMensagem_Clicked"/>
 
             <Frame
                 BackgroundColor="AliceBlue"
-                Padding="10"
+                Padding="20"
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand">
+                CornerRadius="10">
 
                 <StackLayout>
                     <Label Text="{Binding Id}" 
